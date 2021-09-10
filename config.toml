@@ -1,0 +1,68 @@
+theme = "congo"
+languageCode = "en-AU"
+defaultContentLanguage = "en"
+title = "Congo"
+enableEmoji = true
+themesDir = "themes"
+baseURL = ""
+publishDir = "public"
+
+[author]
+name = "Congo"
+image = "img/author.jpg"
+
+  [[author.links]]
+  twitter = "https://twitter.com/"
+
+  [[author.links]]
+  facebook = "https://facebook.com/"
+
+  [[author.links]]
+  linkedin = "https://linkedin.com/"
+
+  [[author.links]]
+  youtube = "https://youtube.com/"
+
+[taxonomies]
+tag = "tags"
+
+[params.homepage]
+layout = "custom"
+showRecent = true
+mainSections = [ "samples" ]
+
+[params.list]
+groupByYear = false
+showBreadcrumbs = true
+
+[params.article]
+showBreadcrumbs = true
+showEdit = true
+editURL = "https://github.com/jpanther/congo/tree/dev/exampleSite/content/"
+editAppendPath = true
+
+[[menu.main]]
+name = "Docs"
+pageRef = "docs"
+weight = 10
+
+[[menu.main]]
+name = "Samples"
+pageRef = "samples"
+weight = 20
+
+[[menu.main]]
+name = "Users"
+pageRef = "users"
+weight = 30
+
+[[menu.main]]
+name = "GitHub"
+url = "https://github.com/jpanther/congo"
+weight = 40
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+noClasses = false

@@ -1,0 +1,81 @@
+stackbitVersion: ~0.3.0
+ssgName: hugo
+publishDir: public
+dataDir: data
+pagesDir: content
+assets:
+  referenceType: static
+  staticDir: static
+  uploadDir: assets
+  publicPath: /
+models:
+  sharing:
+    type: data
+    label: Sharing
+    file: sharing.json
+    fields:
+      - type: object
+        name: email
+        label: Email
+        fields:
+          - type: string
+            name: icon
+            label: Icon
+          - type: string
+            name: title
+            label: Title
+          - type: string
+            name: url
+            label: Url
+      - type: object
+        name: facebook
+        label: Facebook
+        fields:
+          - type: string
+            name: icon
+            label: Icon
+          - type: string
+            name: title
+            label: Title
+          - type: string
+            name: url
+            label: Url
+      - type: object
+        name: linkedin
+        label: Linkedin
+        fields:
+          - type: string
+            name: icon
+            label: Icon
+          - type: string
+            name: title
+            label: Title
+          - type: string
+            name: url
+            label: Url
+      - type: object
+        name: reddit
+        label: Reddit
+        fields:
+          - type: string
+            name: icon
+            label: Icon
+          - type: string
+            name: title
+            label: Title
+          - type: string
+            name: url
+            label: Url
+      - type: object
+        name: twitter
+        label: Twitter
+        fields:
+          - type: string
+            name: icon
+            label: Icon
+          - type: string
+            name: title
+            label: Title
+          - type: string
+            name: url
+            label: Url
